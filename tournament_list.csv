@@ -1,0 +1,15 @@
+index,team1,team2,result_winner_1,result_winner_2,result_winner_3
+0,G-0,G-1,team2,team1,team2
+1,G-0,G-2,team2,team2,
+2,G-0,G-3,team2,team2,
+3,G-0,G-4,team2,team1,team2
+4,G-0,G-5,,,
+5,G-0,G-6,team2,team2,
+6,G-0,G-7,team2,team2,
+7,G-0,G-8,team2,team1,team1
+8,G-0,G-9,team2,team1,team1
+9,G-10,G-0,team1,team1,
+10,G-11,G-0,team1,team2,team1
+11,G-12,G-0,team1,team2,team1
+12,G-13,G-0,team1,team2,team2
+13,G-14,G-0,,,

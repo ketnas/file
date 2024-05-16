@@ -19,9 +19,9 @@ index,team1,team2,result_winner_1,result_winner_2,result_winner_3
 17,G-6,G-11,,,
 18,G-3,G-2,team2,team2,
 19,G-12,G-11,,,
-20,G-13,G-6,,,
-21,G-2,G-1,,,
-22,G-13,G-9,,,
+20,G-13,G-6,team2,team1,team2
+21,G-2,G-1,team1,team1,
+22,G-13,G-9,team2,team2,
 23,G-14,G-2,,,
 24,G-2,G-4,,,
 25,G-12,G-8,,,

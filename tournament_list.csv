@@ -23,11 +23,11 @@ index,team1,team2,result_winner_1,result_winner_2,result_winner_3
 21,G-2,G-1,team1,team1,
 22,G-13,G-9,team2,team2,
 23,G-14,G-2,,,
-24,G-2,G-4,,,
+24,G-2,G-4,team1,team2,team2
 25,G-12,G-8,,,
 26,G-6,G-5,,,
 27,G-14,G-7,,,
-28,G-3,G-6,,,
+28,G-3,G-6,team2,team1,team2
 29,G-4,G-5,,,
 30,G-11,G-7,,,
 31,G-13,G-1,,,

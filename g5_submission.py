@@ -244,11 +244,9 @@ class MinimaxAgent(MultiAgentSearchAgent):
     return currentGameState.getScore(agentIndex)
 
 ######################################################################################
-from util import manhattanDistance, PriorityQueue
+from util import PriorityQueue
 from game import Directions, Actions
 import random
-from typing import List, Tuple
-from pacman import GameState
 
 class YourTeamAgent(MultiAgentSearchAgent):
     def getAction(self, gameState, agentIndex=0):
@@ -301,14 +299,11 @@ class YourTeamAgent(MultiAgentSearchAgent):
             closedSet.add(currentPos)
 
             for direction in [Directions.NORTH, Directions.SOUTH, Directions.EAST, Directions.WEST]:
-                if direction == opposite_direction:
-                    continue
-
                 x, y = currentPos
                 dx, dy = Actions.directionToVector(direction)
                 nextPos = (int(x + dx), int(y + dy))
 
-                if not gameState.hasWall(nextPos[0], nextPos[1]):
+                if not gameState.hasWall(nextPos[0], nextPos[1]) and nextPos != goal:
                     newActions = actions + [direction]
                     newRisk = risk + 1
                     openSet.push((nextPos, newActions, newRisk), newRisk + self.manhattanDistance(nextPos, goal))
@@ -320,21 +315,21 @@ class YourTeamAgent(MultiAgentSearchAgent):
         return random.choice(possible_actions) if possible_actions else Directions.STOP
 
     def getActionToPosition(self, gameState, start, goal):
-        dx, dy = goal[0] - start[0], goal[1] - start[1]
         possible_actions = gameState.getLegalActions(self.index)
-        valid_actions = []
+        best_action = Directions.STOP
+        best_distance = float('inf')
 
-        if dx < 0 and Directions.WEST in possible_actions and not gameState.hasWall(start[0] - 1, start[1]):
-            valid_actions.append(Directions.WEST)
-        elif dx > 0 and Directions.EAST in possible_actions and not gameState.hasWall(start[0] + 1, start[1]):
-            valid_actions.append(Directions.EAST)
+        for action in possible_actions:
+            x, y = start
+            dx, dy = Actions.directionToVector(action)
+            nextPos = (int(x + dx), int(y + dy))
+            if not gameState.hasWall(nextPos[0], nextPos[1]):
+                distance = self.manhattanDistance(nextPos, goal)
+                if distance < best_distance:
+                    best_action = action
+                    best_distance = distance
 
-        if dy > 0 and Directions.NORTH in possible_actions and not gameState.hasWall(start[0], start[1] + 1):
-            valid_actions.append(Directions.NORTH)
-        elif dy < 0 and Directions.SOUTH in possible_actions and not gameState.hasWall(start[0], start[1] - 1):
-            valid_actions.append(Directions.SOUTH)
+        return best_action
 
-        if valid_actions:
-            return random.choice(valid_actions)
-        else:
-            return random.choice(possible_actions) if possible_actions else Directions.STOP
+# Ensure the class is correctly referenced for use
+agent = YourTeamAgent()

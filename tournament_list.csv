@@ -2,8 +2,8 @@ index,team1,team2,result_winner_1,result_winner_2,result_winner_3
 0,G-6,G-7,team2,team1,team1
 1,G-4,G-9,team1,team1,
 2,G-3,G-5,,,
-3,G-3,G-1,,,
-4,G-3,G-12,,,
+3,G-3,G-1,team2,team2,
+4,G-3,G-12,team1,team1,
 5,G-8,G-14,,,
 6,G-8,G-3,,,
 7,G-12,G-10,,,

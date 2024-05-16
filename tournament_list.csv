@@ -30,13 +30,13 @@ index,team1,team2,result_winner_1,result_winner_2,result_winner_3
 28,G-3,G-6,team2,team1,team2
 29,G-4,G-5,,,
 30,G-11,G-7,,,
-31,G-13,G-1,,,
-32,G-12,G-4,,,
+31,G-13,G-1,team2,team2,
+32,G-12,G-4,team2,team2,
 33,G-8,G-10,,,
 34,G-14,G-6,,,
 35,G-14,G-4,,,
 36,G-4,G-8,,,
-37,G-13,G-10,,,
+37,G-13,G-10,team2,team1,team2
 38,G-7,G-13,,,
 39,G-14,G-11,,,
 40,G-6,G-10,,,

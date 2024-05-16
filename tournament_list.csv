@@ -56,11 +56,11 @@ index,team1,team2,result_winner_1,result_winner_2,result_winner_3
 54,G-2,G-5,,,
 55,G-13,G-8,,,
 56,G-9,G-1,team2,team2,
-57,G-9,G-10,,,
-58,G-7,G-10,,,
+57,G-9,G-10,team1,team2,team2
+58,G-7,G-10,team1,team2,team1
 59,G-4,G-13,,,
 60,G-11,G-8,,,
-61,G-9,G-3,,,
+61,G-9,G-3,team1,team2,team2
 62,G-8,G-6,,,
 63,G-14,G-10,,,
 64,G-3,G-13,,,

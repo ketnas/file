@@ -1,6 +1,6 @@
 index,team1,team2,result_winner_1,result_winner_2,result_winner_3
-0,G-6,G-7,,,
-1,G-4,G-9,,,
+0,G-6,G-7,team2,team1,team1
+1,G-4,G-9,team1,team1,
 2,G-3,G-5,,,
 3,G-3,G-1,,,
 4,G-3,G-12,,,
